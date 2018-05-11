@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website styles</title>
+    <style>
+        body{
+            padding: 50px;
+        }
+
+        div.container{
+            perspective: 1000px;
+        }
+
+        a,
+        a:link,
+        a:link:active,
+        a:link:focus{
+            font-size: 25px;
+            color: #00f;
+            text-decoration: none;
+            outline: none;
+            display: block;
+            line-height: 35px;
+            margin-left: 10px;
+            z-index: 1;
+            transform: rotateY(0deg);
+            transition: transform 0.2s linear;
+            background-color: #fff;
+            width: fit-content;
+            border: 2px solid black;
+            padding: 0px 100px;
+        }
+
+        a:hover,
+        a:active,
+        a:focus,
+        a:link:hover{
+            z-index: 2;
+            transform: rotateY(50deg);
+        }
+
+        a:visited,
+        a:visited:link
+        a:visited:link:active,
+        a:visited:link:focus{
+            transition: transform 0.2s linear;
+            transform: rotateY(50deg);
+        }
+
+        a:visited:hover,
+        a:visited:active,
+        a:visited:focus,
+        a:visited:link:hover,{
+            transform: rotateY(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="./1/index.html">Design 1</a>
+    </div>
+    
+</body>
+</html>
