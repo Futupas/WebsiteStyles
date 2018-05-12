@@ -1,73 +1,26 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
 body{
     background: url('./img/wallpaper.png') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
 div.header{
-    z-index: 3;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    height: 50px;
     border-bottom: 5px solid rgb(99, 0, 0);
     background-color: rgb(255, 52, 52);
-    text-align: center;
 }
 
 .header > a.toplink{
-    display: inline-block;
-    padding: 0px 10px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 20px;
     color: rgb(255, 255, 255);
     background-color: rgb(255, 52, 52);
-    text-transform: uppercase;
-    text-decoration: none;
 }
 .header > a.toplink:hover{
+    color: rgb(255, 255, 255);
     background-color: rgb(99, 0, 0);
-    text-decoration: none;
 }
 
 div.title{
-    position: absolute;
-    z-index: 4;    
     background-color: rgba(255, 0, 0, 0);
-    font-size: 100px;
-    padding: 0px 20px;
-    height: 120px;
-    bottom: 20%;
-    left: 200px;
-    line-height: 120px;
-
-    transition: top 50ms linear, left 50ms linear, font-size 50ms linear, line-height 50ms linear;
-
-}
-div.title.fixed{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 30px;
-    background-color: rgb(255, 0, 0);
+    color: #000;
 }
 div.content{
-    position: absolute;
-    z-index: 2;
-    top: 100%;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    height: fit-content;
-    /* background-color: rgba(255, 255, 255, 0.4); */
-    padding: 10px;
-    text-align: justify;
-    font-size: 18px;
+    color: #000;
 }
