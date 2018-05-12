@@ -49,7 +49,6 @@ div.title{
     line-height: 120px;
 
     transition: top 50ms linear, left 50ms linear, font-size 50ms linear, line-height 50ms linear;
-
 }
 div.title.fixed{
     position: fixed;
@@ -58,7 +57,7 @@ div.title.fixed{
     height: 50px;
     line-height: 50px;
     font-size: 30px;
-    background-color: rgba(0, 0, 0, 1);
+    /* background-color: rgba(0, 0, 0, 1); */
 }
 div.content{
     position: absolute;
@@ -68,7 +67,7 @@ div.content{
     right: 0px;
     bottom: 0px;
     height: fit-content;
-    background-color: rgba(0, 0, 0, 0);
+    /* background-color: rgba(0, 0, 0, 0); */
     color: #fff;
     padding: 10px;
     text-align: justify;

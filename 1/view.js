@@ -29,12 +29,15 @@ function SetDefault() {
     littletitle.classList.add('fixed');
     littletitle.style.opacity = '0';
     document.body.appendChild(littletitle);
-    fixedtitlewidth = littletitle.offsetWidth;
+    fixedtitlewidth = littletitle.offsetWidth + 20; // 20 extra pixels
     titledata.fixedtitlewidth = fixedtitlewidth;
     littletitle.style.display = 'none';
     littletitle.remove();
 }
 SetDefault();
+window.onresize = function () {
+    SetDefault();
+};
 
 window.onscroll = function(e) {
     var sk = document.documentElement.scrollTop / window.innerHeight;
