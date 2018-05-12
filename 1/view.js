@@ -36,7 +36,16 @@ function SetDefault() {
 }
 SetDefault();
 window.onresize = function () {
-    SetDefault();
+    titledata.top = (window.innerHeight * 0.8 - 120);
+
+    var toplinks = document.querySelectorAll('.header > a.toplink');
+    var toplinkswidth = 0;
+    for (var i = 0; i < toplinks.length; i++) {
+        toplinkswidth += toplinks[i].offsetWidth;
+    }
+    var toplinksleft = (document.documentElement.clientWidth-toplinkswidth) / 2;
+    titledata.toplinksleft = toplinksleft;
+    window.onscroll();
 };
 
 window.onscroll = function(e) {
@@ -53,7 +62,4 @@ window.onscroll = function(e) {
 
     document.querySelector('.header').style.paddingLeft = 
     ((1-sk)*(titledata.toplinksleft-titledata.fixedtitlewidth) + titledata.fixedtitlewidth) + 'px';
-
-    // if (sk >= 1) style.backgroundColor = 'rgba(152, 255, 152, 1)';
-    // else style.backgroundColor = 'rgba(152, 255, 152, 0)';
 }
