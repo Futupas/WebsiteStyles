@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #000;
+}
+.header{
+    z-index: 4;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    background-color: #000;
+}
+.view{
+    position: fixed;
+    top: 0px;
+    bottom: 100px;
+    left: 0px;
+    right: 0px;
+}
+.cells{
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    bottom: 100px;
+    left: 0px;
+    right: 0px;
+    transform-style: preserve-3d;
+    transform: translateZ(calc((100vh - 100px) / -6));
+    perspective-origin: center center;
+}
+.cells > div{
+    position: absolute;
+    transform-style: preserve-3d;
+    width: calc(100vw / 3);
+    height: calc((100vh - 100px) / 3);
+    transition: transform 0.5s linear;
+    perspective-origin: center center;
+}
+.cell1{
+    top: calc((100vh - 100px) / 3 * 0);
+    left: calc(100vw / 3 * 0);
+}
+.cell2{
+    top: calc((100vh - 100px) / 3 * 0);
+    left: calc(100vw / 3 * 1);
+}
+.cell3{
+    top: calc((100vh - 100px) / 3 * 0);
+    left: calc(100vw / 3 * 2);
+}
+.cell4{
+    top: calc((100vh - 100px) / 3 * 1);
+    left: calc(100vw / 3 * 0);
+}
+.cell5{
+    top: calc((100vh - 100px) / 3 * 1);
+    left: calc(100vw / 3 * 1);
+}
+.cell6{
+    top: calc((100vh - 100px) / 3 * 1);
+    left: calc(100vw / 3 * 2);
+}
+.cell7{
+    top: calc((100vh - 100px) / 3 * 2);
+    left: calc(100vw / 3 * 0);
+}
+.cell8{
+    top: calc((100vh - 100px) / 3 * 2);
+    left: calc(100vw / 3 * 1);
+}
+.cell9{
+    top: calc((100vh - 100px) / 3 * 2);
+    left: calc(100vw / 3 * 2);
+}
+
+.cells > div > div{
+    position: absolute;
+    width: calc(100vw / 3);
+    height: calc((100vh - 100px) / 3);
+    transform-origin: center center;
+}
+
+.cells > div > .side1{
+    background-color: #00f;
+    transform: translate3d(0px, 0px, calc((100vh - 100px) / 6)) rotateX(0deg);
+}
+.cells > div > .side2{
+    background-color: #0f0;
+    transform: translate3d(0px, calc((100vh - 100px) / -6), 0px) rotateX(90deg);
+}
+.cells > div > .side3{
+    background-color: #f00;
+    transform: translate3d(0px, 0px, calc((100vh - 100px) / -6)) rotateX(180deg);
+    
+}
+.cells > div > .side4{
+    background-color: rgb(234, 0, 255);
+    transform: translate3d(0px, calc((100vh - 100px) / 6), 0px) rotateX(270deg);
+}
+.cells > div > .left{
+    background-color: #000;
+    transform: translate3d(calc((100vh - 100px) / -6), 0px, 0px) rotateY(90deg);
+    width: calc((100vh - 100px) / 3);
+    height: calc((100vh - 100px) / 3);
+}
+.cells > div > .right{
+    background-color: #000;
+    transform: translate3d(calc((100vw / 3) - ((100vh - 100px) / 6)), 0px, 0px) rotateY(270deg);
+    width: calc((100vh - 100px) / 3);
+    height: calc((100vh - 100px) / 3);
+}

@@ -1,0 +1,63 @@
+@font-face {
+    font-family: AGZeppelin;
+    src: url('AGZeppelin_Oblique_.ttf');
+}
+
+*{
+    font-family: 'AGZeppelin', 'Arial';
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#title{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100vh;
+    background: url('./wallpapers/wallpaper12.jpg');
+    background-size: cover;
+    background-position: center center;
+    z-index: 2;
+}
+#name{
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: calc(50% - 50px);
+    height: 100px;
+    width: 100%;
+    padding: 0px;
+    color: #fff;
+    line-height: 100px;
+    font-size: 70px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+#text{
+    position: static;
+    margin-top: 100vh;
+    padding: 5px;
+    text-align: justify;
+    background-color: #0d0d0d;
+    color: #fff;
+    font-size: 23px;
+}
+
+a,
+a:link,
+a:visited,
+a:visited:link{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover,
+a:active,
+a:focus,
+a:visited:hover,
+a:visited:active,
+a:visited:focus{
+    text-decoration: none;
+    color: #fff !important;
+}
